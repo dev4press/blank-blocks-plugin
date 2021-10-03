@@ -7,7 +7,7 @@ Description:       Example for the blank blocks plugin, to be used as a starting
 Author:            Milan Petrovic
 Author URI:        https://millan.dev/
 Text Domain:       blank-blocks-plugin
-Version:           1.0
+Version:           1.0.0
 Requires at least: 5.6
 Tested up to:      5.9
 Requires PHP:      7.0
@@ -30,3 +30,15 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>
 */
+
+use Dev4Press\Plugins\BlankBlocksPlugin\Blocks;
+
+const BLANK_BLOCKS_VERSION     = '1.0.0';
+const BLANK_BLOCKS_FILE        = __FILE__;
+const BLANK_BLOCKS_PLUGIN_PATH = __DIR__ . '/';
+
+define( 'BLANK_BLOCKS_PLUGIN_URL', plugins_url( '/', BLANK_BLOCKS_FILE ) );
+
+require_once( BLANK_BLOCKS_PLUGIN_PATH . 'code/blocks-registration.php' );
+
+Blocks::instance();
