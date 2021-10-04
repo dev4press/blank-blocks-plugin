@@ -1,6 +1,6 @@
 <?php
 
-namespace Dev4Press\Plugins\BlankBlocksPlugin;
+namespace Dev4Press\Plugin\BlankBlocksPlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

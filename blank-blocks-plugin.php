@@ -31,7 +31,7 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>
 */
 
-use Dev4Press\Plugins\BlankBlocksPlugin\Blocks;
+use Dev4Press\Plugin\BlankBlocksPlugin\Blocks;
 
 const BLANK_BLOCKS_VERSION     = '1.0.0';
 const BLANK_BLOCKS_FILE        = __FILE__;
